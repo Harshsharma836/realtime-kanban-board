@@ -1,0 +1,255 @@
+/* =======================
+   RESET
+======================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system;
+}
+
+/* =======================
+   APP THEMES
+======================= */
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* DARK */
+.app.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* LIGHT */
+.app.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  flex: 1;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* =======================
+   CONTROLS
+======================= */
+button,
+select,
+input,
+textarea {
+  border-radius: 8px;
+  padding: 8px 12px;
+  border: 1px solid;
+  font-size: 14px;
+}
+
+.app.dark button,
+.app.dark select,
+.app.dark input,
+.app.dark textarea {
+  background: #1e293b;
+  color: #e5e7eb;
+  border-color: #334155;
+}
+
+.app.light button,
+.app.light select,
+.app.light input,
+.app.light textarea {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+button {
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* =======================
+   BOARD
+======================= */
+.board {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* =======================
+   COLUMN
+======================= */
+.column {
+  background: #e9eef5;
+  border-radius: 18px;
+  padding: 14px;
+  width: 320px;
+}
+
+.app.dark .column {
+  background: #020617;
+}
+
+.column h2 {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* =======================
+   CARD
+======================= */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.app.dark .card {
+  background: #0f172a;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+/* =======================
+   CARD HEADER
+======================= */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* =======================
+   CARD BODY
+======================= */
+.card-desc {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #475569;
+}
+
+.app.dark .card-desc {
+  color: #cbd5f5;
+}
+
+/* =======================
+   CARD FOOTER
+======================= */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.app.dark .card-footer {
+  color: #94a3b8;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* =======================
+   DELETE BUTTON
+======================= */
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+/* =======================
+   MODAL
+======================= */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app.dark .modal {
+  background: #020617;
+}
+
+.modal h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modal-actions .secondary {
+  background: transparent;
+}
