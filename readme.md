@@ -137,9 +137,8 @@ npm run test
 
 ### 📸 Test Results Screenshot
 
-```md
-![Test Results](./screenshots/tests.png)
-```
+<img width="859" height="358" alt="Screenshot 2025-12-17 182327" src="https://github.com/user-attachments/assets/16a82386-599c-4ddb-a34d-7c30c32667b7" />
+
 
 ---
 
@@ -147,15 +146,13 @@ npm run test
 
 ### Kanban Board UI
 
-```md
-![Kanban UI](./screenshots/ui.png)
-```
+<img width="1919" height="399" alt="Screenshot 2025-12-17 202858" src="https://github.com/user-attachments/assets/4026ef94-762c-4358-a690-f79691a93923" />
+
 
 ### Add Task Modal
 
-```md
-![Add Task Modal](./screenshots/modal.png)
-```
+<img width="1904" height="626" alt="Screenshot 2025-12-17 204409" src="https://github.com/user-attachments/assets/4214e55f-d53e-42c6-8fff-020a3e14e44d" />
+
 
 ---
 
